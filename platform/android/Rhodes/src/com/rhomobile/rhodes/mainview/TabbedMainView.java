@@ -639,7 +639,8 @@ public class TabbedMainView implements MainView {
                 MainView mainView = activity.getMainView();
                 action = mainView.currentLocation(-1);
                 IRhoWebView webView = mainView.detachWebView();
-                view = new SimpleMainView(webView);
+              //  view = new SimpleMainView(webView);
+                  view = SimpleMainView(webView);
             }
             if (view == null) {
                 view = new SimpleMainView(RhoExtManager.getImplementationInstance().createWebView(activity, i));
